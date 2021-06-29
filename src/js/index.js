@@ -1,15 +1,15 @@
-//import react into the bundle
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css';
+import './index.css';
+import '@popperjs/core';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import App from './App';
 
-//include bootstrap npm library into the bundle
-import "bootstrap/dist/css/bootstrap.css";
-
-//include your index.scss file into the bundle
-import "../styles/index.scss";
-
-//import your own components
-import Layout from "./layout";
-
-//render your react application
-ReactDOM.render(<Layout />, document.querySelector("#app"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
